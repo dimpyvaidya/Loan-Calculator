@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="logo.png" alt="bank_logo">
+    <h1>Personal Loan Calculator</h1>
+    <p>Use our loan calculator to see how much your monthly payments could be.</p>
+    <div class="form_style">
+        <form>
+            <label>Borrowing Reason :</label>
+            <select name="reason">
+                <option value="reason">Select your borrowing reason</option>
+                <option value="reason1">Pay off my Debt sooner</option>
+                <option value="reason2">Reduce monthly interest cost</option>
+                <option value="reason3">Major Purchase</option>
+                <option value="reason4">Renovation</option>
+                <option value="reason5">Other</option>
+            </select>
+            <br>
+            <label>Amount to Borrow :</label>
+            <input type="text" id="amount"> <br>
+
+            <label>Interest Rate :</label>
+            <input type="text" id="num2"> <br>
+
+            <label>Loan Term :</label>
+            <input type="text" value="years" id="years"> <br>
+
+            <input type="button" value="Calculate" onclick="calculate();">
+        </form>
+    </div>
+    <div>
+        <h2>Your Monthly Payments</h2>
+        <br>
+        <label><strong>Monthly payment :</strong></label>
+        <p>$<span class="output" id="total"></span></p>
+        <label><strong>Total payment :</strong></label>
+        <p>$<span class="output" id="total"></span></p>
+        <label><strong>Total interest :</strong></label>
+        <p>$<span class="output" id="totalinterest"></span></p>
+    </div>
+    <script src="index2.js"></script>
+
+</body>
+
+</html>
