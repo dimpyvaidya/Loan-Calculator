@@ -12,8 +12,7 @@
 <body>
     <img src="logo.png" alt="bank_logo">
     <h1>Personal Loan Calculator</h1>
-    <p>Use our loan calculator to see how much your monthly payments could be.</p>
-    <div class="form_style">
+    <div>
         <form>
             <label>Borrowing Reason :</label>
             <select name="reason">
@@ -25,29 +24,31 @@
                 <option value="reason5">Other</option>
             </select>
             <br>
-            <label>Amount to Borrow :</label>
+            <label>Amount to Borrow ($) :</label>
             <input type="text" id="amount"> <br>
 
-            <label>Interest Rate :</label>
-            <input type="text" id="num2"> <br>
+            <label>Interest Rate (%) :</label>
+            <input type="text" id="apr"> <br>
 
-            <label>Loan Term :</label>
-            <input type="text" value="years" id="years"> <br>
+            <label>Loan Term (years):</label>
+            <input type="text" id="years"> <br>
 
-            <input type="button" value="Calculate" onclick="calculate();">
+            <button onclick="return calculate();">Calculate</button>
+
         </form>
     </div>
-    <div>
-        <h2>Your Monthly Payments</h2>
-        <br>
-        <label><strong>Monthly payment :</strong></label>
-        <p>$<span class="output" id="total"></span></p>
+    <div class="output">
+        <label><strong>Loan Amount :</strong></label>
+        <p><span class="output" id="amount"></span></p>
+
+        <label><strong>Monthly instalments :</strong></label>
+        <p><span class="output" id="payment"></span></p>
         <label><strong>Total payment :</strong></label>
-        <p>$<span class="output" id="total"></span></p>
+        <p><span class="output" id="total"></span></p>
         <label><strong>Total interest :</strong></label>
-        <p>$<span class="output" id="totalinterest"></span></p>
+        <p><span class="output" id="totalinterest"></span></p>
     </div>
-    <script src="index2.js"></script>
+    <script src="index.js"></script>
 
 </body>
 

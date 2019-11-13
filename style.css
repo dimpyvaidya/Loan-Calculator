@@ -16,4 +16,6 @@ form {
     padding: 1.5em;
 }
 
-.form_style {}
+.output {
+    display: inline;
+}
